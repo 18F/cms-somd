@@ -1,5 +1,0 @@
-[allowlist]
-    description = "globally allowed"
-    regexes = [
-        '''.*app\.mural\.co.*'''
-    ]
