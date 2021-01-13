@@ -1,0 +1,28 @@
+{% for section in site.data.rubric %}
+{% assign mod = forloop.index | modulo: 2 %}
+{% for priority in section.priorities %}
+{% for dimension in priority.dimensions %}
+{% if dimension.id == include.dimension %}
+<div class="grid-row" style="border-radius: 10px; background:#ddd;padding-left: 1em;margin-top:1em;">
+<div class="grid-col-12">
+    <div class="grid-row tiprow">
+{% for tip in dimension.tips %}
+        <div class="{% if dimension.tips.size == 1%}grid-col-3{% else %}grid-col-2{% endif %} tip" {% if mod == 0 %}style="background: #ccc;"{% endif %} >
+            {{tip}}
+        </div>
+        {% if dimension.tips.size == 1%}
+        <div class="grid-col-1 blanktip"> &nbsp; </div>
+        {% endif %}
+{% endfor %}
+        <div class="grid-col-2 red">
+        {{dimension.red}}
+        </div>
+        <div class="grid-col-2 yellow">
+        {{dimension.yellow}}
+        </div>
+        <div class="grid-col-2 green">
+        {{dimension.green}}
+        </div>
+    </div>
+</div>
+</div>{% endif %}{% endfor %}{% endfor %}{% endfor %}

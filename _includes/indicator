@@ -1,0 +1,11 @@
+{% if include.slug contains "admin" %}
+    Admin
+{% elsif include.slug contains "oo" %}
+    Outcomes & Orientation
+{% elsif include.slug contains "sc" %}
+    State Capacity
+{% elsif include.slug contains "pf" %}
+    Procurement Flexibility
+{% elsif include.slug contains "id" %}
+    Iterative Development
+{% endif %}

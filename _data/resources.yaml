@@ -1,0 +1,365 @@
+books:
+    header: Books
+    resources:
+        - title: A Civic Technologist's Practice Guide
+          author: Cyd Harrell 
+          link: https://cydharrell.com/book/ 
+          note: I’ve put every single thing I know about civic tech into this little book. It’s both an onboarding guide and a survival manual, and I hope it will be useful to the field. It outlines the types of projects, partnerships, and people that civic technologists encounter, and the methods we can use to make lasting change. 
+web:
+    header: Around the Web
+    resources:
+        - title: So You Want to Be A Product Manager
+          uid: sywtbapm
+          url: https://beingfa.com/2017/10/31/so-you-want-to-be-a-product-manager/
+          author: Julia Austin
+          note: "There are core competencies that every PM must have – many of which can start in the classroom – but most are developed with experience and good role models/mentoring..."
+        - title: The Definition of a Tech Lead
+          url: https://www.patkua.com/blog/the-definition-of-a-tech-lead/
+          uid: doatl
+          author: Pat Kua
+          note: "A Tech Lead is a software engineer responsible for leading a team and alignment of the technical direction. Providing a strong technical direction involves establishing a technical vision, resolving technical disagreements and managing the technical quality of team deliverables. Effective technical leadership ensures the team uses appropriate engineering practices (such as CD or automated testing), invests in continual improvements to tooling or technical debt, and that the system evolves to meet its changing needs and environment."
+        - title: What is a Tech Lead?
+          url: https://ajahne.github.io/blog/leadership/2018/02/16/what-is-a-tech-lead.html
+          uid: wiatl
+          author: Ajahne
+          note: "A Tech Lead is a senior engineer responsible for leading a team of software developers to achieve a collective goal."
+        - title: "Tips for Agile product roadmaps & product roadmap examples"
+          uid: tfaprm
+          url: https://medium.com/the-value-maximizers/tips-for-agile-product-roadmaps-product-roadmap-examples-55b3c920208e
+          author: Robbin Schuurman
+          note: "The concept of a product roadmap however, is that it is a high-level, strategic plan, that describes the likely development of the product over the next period of time. The roadmap should support the products’ purpose and vision and it helps the Product Owners to keep their stakeholders aligned. The roadmap also makes it easier to coordinate the development of different products and it fosters transparency in order to manage customer expectations."
+        - title: Story Mapping 101 
+          uid: sm101
+          author: David Hawks
+          url: https://agilevelocity.com/story-mapping-101/
+          note: |
+            The challenge presented by traditional backlogs is they are flat and do not convey any notion of the end user’s journey. This makes it difficult to recognize if any gaps exist. Also, we can easily lose business context when trying to prioritize many user stories against each other. Story Maps were invented by Jeff Patton to help overcome those challenges. Patton’s process helps teams discover requirements from a user experience point of view.
+        - title: Product Roadmaps
+          uid: aacpr
+          author: Bree Davies
+          url: https://www.atlassian.com/agile/product-management/product-roadmaps
+          note: |
+            A product roadmap is a shared source of truth that outlines the vision, direction, and progress of a product over time. 
+        - title: Project Management
+          uid: wipm
+          author: Project Management Institute
+          url: https://www.pmi.org/about/learn-about-pmi/what-is-project-management
+          note: |
+            More specifically, what is a project? It's a temporary endeavor undertaken to create a unique product, service or result.
+        - title:  The 9 Best Metrics to Measure Software Team Productivity
+          uid: nbmtmstp
+          author: Jama Software
+          url: https://www.jamasoftware.com/blog/the-9-best-metrics-to-measure-software-team-productivity/
+          note: One group's thoughts on metrics for software team productivity.
+        - title: Development Leaders Reveal the Best Metrics for Measuring Software Development Productivity
+          uid: dlrbmfmsdp
+          author: Alexandra Altvater
+          url: https://stackify.com/measuring-software-development-productivity/
+          note: |
+            From the author: When it comes to evaluating the productivity of your development teams, what metrics matter most? Should you merely be concerned with deadlines and time sheets, or should you focus on customer satisfaction to evaluate team performance?
+        - title: "The Joel Test: 12 Steps to Better Code"
+          uid: thejoeltest
+          author: Joel Spolsky
+          url: https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/
+          note: |
+            From the author: Have you ever heard of SEMA? It’s a fairly esoteric system for measuring how good a software team is. No, wait! Don’t follow that link! It will take you about six years just to understand that stuff. So I’ve come up with my own, highly irresponsible, sloppy test to rate the quality of a software team. The great part about it is that it takes about 3 minutes. With all the time you save, you can go to medical school.
+        - title: "The 18F De-risking Guide"
+          uid: deriskingguide
+          author: 18F
+          url: https://derisking-guide.18f.gov/
+          note: |
+            Guidance for delivering successful custom technology projects in government.
+        - title: 18F Methods Guide
+          uid: methodsguide
+          author: 18F
+          url: https://methods.18f.gov/
+          note: |
+            A collection of tools to bring human-centered design into your project.
+        - title: The 18F State Field Guide
+          uid: statefieldguide
+          author: "Robin Carnahan, Randy Hart, Waldo Jaquith"
+          url: https://derisking-guide.18f.gov/state-field-guide/
+          note: |
+            Technical knowledge is cheap and abundant, but knowing how to run a state agency is a rare and valuable skill. Government must embrace and own its responsibility and risk of failure, recognizing that technology vendors are hired only to help and should be easily replaceable if they don’t deliver.
+        - title: Agile Principles and 18F Practices
+          uid: agileprinciples
+          author: 18F
+          url: https://agile.18f.gov/
+          note: |
+            Analysis and experimentation conducted during the 1990’s suggested that the so-called waterfall development process was largely responsible for this climate of failure. After ten years of work, the Agile Manifesto was published in 2001. The Manifesto ushered in the age of Agile software development by outlining a framework for a different approach to the problem. The (then) new Agile approach featured outreach to potential users of software, decomposition of large software projects into much smaller projects that were much less difficult and risky, and empowerment of development teams to respond to evolving requirements.
+        - title: Shifting Our Team Goals to be UX Outcomes
+          uid: sotgtbuxo
+          url: https://articles.uie.com/shifting-our-team-goals-to-be-ux-outcomes/
+          author: Jared M. Spool
+          note: |
+            When a team measures their goals using activities, they are focusing on the outputs of UX research and design efforts. Outputs are necessary, but they are not the end of the game.
+        - title: "Deploy to Production: 5 Tips to Make It Smoother"
+          uid: dtp5tps
+          url: https://rollout.io/blog/deploy-to-production-5-tips-make-smoother/
+          author: Christian Meléndez
+          note: |
+            Who hasn’t had issues when deploying a software change to production? No one.
+        - title: "A No-Nonsense DevOps Tutorial For Beginners With Examples"
+          uid: anndot
+          url: https://rollout.io/blog/a-no-nonsense-devops-tutorial-for-beginners-with-examples/
+          author: kileynichols
+          note: |
+            DevOps has become mainstream in the last decade and continues to gain in popularity. That’s why we’re providing this DevOps tutorial to help you get started quickly.
+        - title: Agile Practices Github Repository
+          uid: apghrepo
+          url: https://github.com/18F/agile
+          author: 18F
+          note: |
+            The source for the 18F agile practices guide.
+        - title: Validating Software Products
+          uid: vsp18f
+          url: https://methods.18f.gov/validate/
+          author: 18F
+          note: |
+            Our guide on validating software products.
+        - title: Card Sorting
+          uid: cs18f
+          url: https://methods.18f.gov/card-sorting
+          author: 18F
+          note: |
+            From the 18F methods guide.
+        - title: Multivariate Testing
+          uid: mvt18f
+          url: https://methods.18f.gov/multivariate-testing
+          author: 18F
+          note: |
+            From the 18F methods guide.
+        - title: Usability Testing
+          uid: ut18f
+          url: https://methods.18f.gov/usability-testing
+          author: 18F
+          note: |
+            From the 18F methods guide.
+        - title: Visual Preference Testing
+          uid: vpt18f
+          url: https://methods.18f.gov/visual-preference-testing
+          author: 18F
+          note: |
+            From the 18F methods guide.
+        - title: "Etymology of the word 'bullshit'"
+          uid: bullhistory
+          url: https://www.etymonline.com/word/bull?ref=etymonline_crossreference#etymonline_v_18053
+          author: Etymonline
+          note: |
+            If we're going to use a word in a technical sense, it helps to know where it comes from.
+        - title: "Demos not Memos"
+          uid: demosnotmemo
+          url: https://derisking-guide.18f.gov/state-field-guide/budgeting-tech/#require-demos-not-memos
+          author: 18F
+          note: |
+            "The golden rule."
+        - title: Spanish Naming Traditions
+          uid: sntrad
+          url: https://en.wikipedia.org/wiki/Spanish_naming_customs
+          author: Wikipedia
+          note: When thinking about names in DB systems, think globally and inclusively.            
+        - title: Native American Naming Traditions
+          uid: nantrad
+          url: https://www.npr.org/templates/story/story.php?storyId=5079630
+          author: NPR
+          note: When thinking about names in DB systems, think globally and inclusively.
+        - title: The Surname I Do Not Have
+          uid: thesurname
+          url: https://www.bmj.com/content/324/7349/1307
+          author: Radhika
+          note: When thinking about names in DB systems, think globally and inclusively.
+        - title: Blue/Green Deployments
+          uid: bluegreen
+          url: https://martinfowler.com/bliki/BlueGreenDeployment.html
+          author: Martin Fowler
+          note: A brief look at blue/green deployments, which means "how to safely roll forward and back from a push to production."
+        - title: SolarWinds hack may be much worse than originally feared
+          uid: solarwinds
+          url: https://www.theverge.com/2021/1/2/22210667/solarwinds-hack-worse-government-microsoft-cybersecurity
+          author: Kim Lyons
+          note: A recent (as of Dec 2020) hack of as-of-yet unknown scope and impact.
+        - title: Software Engineering Daily
+          uid: sed
+          url: https://softwareengineeringdaily.com/
+          author: Jeff Meyerson
+          note: A podcast about contemporary topics in software engineering.
+        - title: "Daily Participation: One Key to Raising Achievement"
+          uid: dpoktra
+          url: https://www.educationworld.com/a_admin/columnists/bell/bell010.shtml#:~:text=Popsicle%20sticks.&text=With%20this%20strategy%2C%20the%20teacher,teacher%20might%20call%20on%20them.
+          author: Larry Bell
+          note: |
+            This strategy for improving student achievement on state tests is one that Larry Bell includes in his "Closing the Achievement Gap Workshop -- Part 1." It is also included in his Educational Leadership article "Ten Strategies That Close the Achievement Gap."
+        - title: Section 508
+          uid: section508
+          url: https://www.section508.gov/
+          author: US Government
+          note: Section 508. 'Nuff said.
+        - title: The Americans with Disabilities Act
+          uid: adagov
+          url: https://www.ada.gov/
+          author: US Government
+          note:
+        - title: Web Content Accessibility Guidelines
+          uid: wcag
+          url: https://www.w3.org/WAI/standards-guidelines/wcag/
+          author: WCAG
+          note: 
+        - title: "American Management Association re: Team Dynamics"
+          uid: amatd
+          url: https://www.amanet.org/articles/team-dynamics/
+          author: Loren B. Belker, Jim McCormick, and Gary S. Topchik
+          note: |
+            If you really want your team to succeed and perform at the highest levels possible, you need to build a team dynamic. A team dynamic is the willingness and the ability to work in an interdependent fashion where team members need to rely on other team members to accomplish their work or to achieve the goals of the team.
+        - title: Asking Technical Questions of Agencies
+          uid: atqoa
+          url: https://derisking-guide.18f.gov/state-field-guide/#ask-technical-questions-of-agencies
+          author: 18F
+          note: Part of the derisking guide.
+        - title: "An Exploration of Communities of Practice: From Lave and Wenger’s Seminal Work to a U.S. Government Agency’s Knowledge Sharing Program"
+          uid: eocpnasa
+          url: https://files.eric.ed.gov/fulltext/ED492437.pdf
+          author: Tina M. Chindgren
+          note: |
+            The communities of practice model for knowledge sharing is examined in this conceptual paper. Key themes reflected in the literature – the linkage between knowledge and activity and the importance of relationships - are explored within the context of programs and practices within the National Aeronautics and Aerospace Agency (NASA) learning environment. 
+        - title: Social Learning Theory
+          uid: abslt
+          url: https://www.instructionaldesign.org/theories/social-learning/
+          author: instructionaldesign.org
+          note: |
+            This is an overview page at instructionaldesign.org. 
+        - title: 
+          uid: 
+          url: 
+          author: 
+          note: 
+
+videos:
+  header: Videos
+  resources:
+      - title: Day in the Life of a Product Manager
+        uid: ditlpm
+        url: https://www.youtube.com/watch?v=R0ffUjavxxs
+        duration: 2m31s
+        author: Yelp
+        note: "Do you love design? Are you motivated by utilizing technical skills and analytics to solve problems? Meet Brittany Cheng, a 5-star Product Manager at Yelp and get a behind the scenes look at her day in the office."
+      - title: The Role of being Technical in Technical Leadership
+        uid: robttl
+        url: https://www.youtube.com/watch?v=G25_RQqV4vE
+        duration: 5m33s
+        author: O'Reilly
+        note: "There is compelling evidence that technical workers want leaders who are strong technologists, leaders they believe they can learn from. What does this mean for those who wish to become engineering managers and technical leaders? How can you be an effective noncoding technical leader? Camille Fournier explores this conundrum and shares strategies to overcome it."
+      - title: Guide to Roadmapping
+        uid: jbgtr
+        author: Janna Bastow
+        url: https://vimeo.com/100642934
+        duration: 20m45s
+        note: |
+          Product fanatic Janna Bastow guides us through Roadmapping in this video from London’s June ProductTank. In this video Janna (@simplybastow) covers all aspects of the contentious subject of product roadmaps. She takes us through different visual forms of roadmaps, explains best practices and describes essential components.
+      - title: Agile Product Ownership in a Nutshell
+        uid: apoian
+        author: Henrik Kniberg
+        url: https://www.youtube.com/watch?v=502ILHjX9EE
+        duration: 15m51s
+        note: |
+          This is basically a 1 day product ownership course compressed into 15 minute animated presentation. There's obviously more to product ownership than this, so see this is a high level summary.
+      - title: What do product managers do?
+        uid: wdpmd
+        author: Atlassian
+        url: https://www.youtube.com/watch?v=yUOC-Y0f5ZQ
+        duration: 5m28s
+        note: |
+           From the Author: The product manager role continues to be a topic of debate. This is because as teams and organizations grow the responsibilites of a PM change from being a swiss army knife doing anything and everything to a skilled influencer creating a shared understanding with the team. Distinguished Product Manager Sherif Mansour walks us through the challenges and misconceptions of the product manager role based on his ten years of experience as a PM at Atlassian.
+      - title: A Day in the Life of a Project Manager (Working from Home)
+        uid: aditloapmwfh
+        author: Kristyn Alexis
+        url: https://www.youtube.com/watch?v=nECjeK-mAMg
+        duration: 11m53s
+        note: |
+          From the Author: Welcome to my day in the life of a project manager working from home. You can expect to learn about what it takes to become a good project manager and what I do in a typical day of work.
+      - title: Top 12 Project Management Jargon Terms Project Managers Use
+        uid: ttpmjtpmu
+        author: Mike Clayton
+        url: https://www.youtube.com/watch?v=F25BGXAlaG0
+        duration: 15m59s
+        note: |
+          From the Author: Here's our list of the top 12 project management jargon terms. Among this list, are the terms project managers use most often. And, if you are going to manage projects, I'd certainly say these are among the most important project management terms for you to know.
+      - title: Should You Really Measure Progress On Software Projects?
+        uid: syrmposp
+        author: Healthy Software Developer
+        url: https://www.youtube.com/watch?v=0yxfb-drlE4
+        duration: 7m55s
+        note: |
+          From the author: There’s an old saying “you improve what you focus on, and you focus on what you measure”.
+      - title: Human-centered design in 60 seconds!
+        uid: hcdin60
+        author: Icey Jiang
+        duration: 2m35s
+        note: |
+          In this episode Icey Jiang, ambassador for Women Techmakers, goes over Human-centered design, which sits at the intersection of empathy and creativity. It is a creative approach to problem-solving starting with people and ending with tailored-made innovative solutions. Learn about the 4 main phases and implement this approach today!
+      - title: "DevExplains: What is human-centered design — and why does it matter?"
+        uid: dewihcd
+        url: https://www.youtube.com/watch?v=0bxtEqM2TQU
+        author: Devex
+        duration: 3m18s
+        note: |
+          Is human-centered design a game changer in global development, or just another buzzword? Devex breaks down exactly what it is and why it matters for the global development community — and delves into some of the ways it could help organizations work more efficiently.
+      - title: Principles of Human-Centered Design (Don Norman)
+        uid: pohcd
+        url: https://www.youtube.com/watch?v=rmM0kRf8Dbk
+        author: NNgroup
+        duration: 2m55s
+        note: |
+          Human-Centered Design (HCD) is not about following processes. It’s about being mindful of HCD principles. Keep focus on people and the entire system to solve the right problems.
+      - title: How To Write User Stories, Epics, & Personas - Dev Life
+        uid: htwusep
+        author: freeCodeCamp.org
+        url: https://www.youtube.com/watch?v=Fw98L-kcRpc
+        duration: 7m38s
+        note: |
+          User Stories, Epics, and Personas help organize all the needs of a project so it is clear what needs to be done.
+      - title: Web Accessibility Perspectives - Compilation of 10 Topics/Videos
+        url: https://www.youtube.com/watch?v=3f31oufqFSM
+        uid: wapco10
+        author: W3C Web Accessibility Initiative (WAI)
+        duration: 7m36s
+        note: |
+          Web accessibility: essential for some, useful for all.
+      - title: Foundations of Agile
+        uid: foundationsagile
+        url: https://digital.gov/event/2019/11/04/foundations-agile-i/
+        duration: 1h
+        note: |
+          An overview of agile practices by the 18F Alans.
+      - title: Calming, Centering Breath - Here Now
+        uid: ccb
+        url: https://www.youtube.com/watch?v=eLRI4HV9h-o
+        duration: 4m20s
+        note: |
+          Julia guides us in a simple breathing practice designed to calm and relax the nervous system. We explore breathing into the belly, rib cage, and collarbones. You will feel more centered, peaceful, and grounded.        
+      - title: "Ed's Redeeming Qualities - Bob"
+        uid: nameisbob
+        url: https://www.youtube.com/watch?v=5ozrXNRAUas
+        duration: 1m58s
+        note: |
+          A silly song about the name Bob by the band <em>Ed's Redeeming Qualities</em>. For levity only.
+      - title: Security Monitoring with Jeff Williams
+        uid: smwjw
+        url: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5tZWdhcGhvbmUuZm0vU0VENDg0Mzk4MTQwMQ/episode/NW5z?sa=X&ved=0CAcQuIEEahgKEwiQ_Muj_oTuAhUAAAAAHQAAAAAQrgI
+        duration: 1h
+        note: A podcast conversation about systems monitoring for security.
+              
+      - title: The Art of Monitoring with James Turnbull
+        uid: taomwjt
+        url: https://podcasts.google.com/feed/aHR0cHM6Ly9zb2Z0d2FyZWVuZ2luZWVyaW5nZGFpbHkuY29tL2NhdGVnb3J5L2Nsb3VkLWVuZ2luZWVyaW5nL2ZlZWQv/episode/aHR0cDovL3NvZnR3YXJlZW5naW5lZXJpbmdkYWlseS5jb20vP3A9MjczOQ
+        duration: 1h 
+        note: A podcast about systems monitoring; covers the topic at a high level.
+
+slidedecks:
+  header: Slide Decks
+  resources:
+    - title: Creating Agile Product Roadmaps Everyone Understands
+      uid: capreu
+      author: Janna Bastow
+      url: https://www.slideshare.net/uxpin/creating-agile-product-roadmaps-everyone-understands/18
+
+

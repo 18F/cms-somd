@@ -1,0 +1,101 @@
+<style>
+    .courseslug {
+        color: white; 
+        padding-left: 1em; 
+        padding-right: 1em;
+        padding-top: 0.2em; 
+        padding-bottom: 0.2em; 
+    }
+</style>    
+<table class="usa-table--borderless">
+    <tr>
+        <td><b>Health Indicator</b></td>
+        <td><b>Lesson</b></td>
+    </tr>
+    
+    {% assign lesson_counter = 1 %}
+    {% comment %} 
+    'visited' is for the case where a single rubric lesson 
+    handles more than one rubric dimension 
+    {% endcomment %}
+    {% assign visited = '' | split: '' %}
+
+    {% for id in include.lessons %}
+        {% assign lesson = 0 %}
+        {% comment %} See if we're referencing a rubric dimension or a course. {% endcomment %}
+        {% for p in site.rubric %}
+            {% for d in p.dimension %}
+                {% if d == id %}
+                    <!-- found {{ id }} -->
+                    {% assign lesson = p %}
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+        {% comment %} If it wasn't found in the rubric, look for it in the courses. {% endcomment %}
+        {% if lesson == 0 %}
+            {% for p in site.courses %}
+                {% for d in p.dimension %}
+                    {% if d == id %}
+                        <!-- found {{ id }} -->
+                        {% assign lesson = p %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+        {% if lesson != 0 %}
+            {% if lesson.path contains "course" %}
+                <!-- is a course {{ id }} -->
+                {% assign is_course = true %}
+                {% assign color = "#aaaaaa" %}
+            {% else %}
+                {% assign is_course = false %}
+                {% assign color="#1d3557" %}
+            {% endif %}
+            {% comment %} Find all the courses that match this id {% endcomment %}
+            {% if is_course %}
+                <tr>
+                    <td>
+                        <span class="courseslug" style="background: {{ color }};">
+                            {% include indicator slug="admin" %}
+                        </span> 
+                    </td>
+                    <td> 
+                        <a href="{{ lesson.url | prepend: site.baseurl }}">
+                            {{ lesson.title }}
+                        </a>
+                    </td>
+                </tr>
+            {% else %}
+                {% for lesson in site.rubric %}
+                    {% for ld in lesson.dimension %}
+                        <!-- visited: {{ visited }} -->
+                        <!-- thing: {{lesson.slug}} -->
+                        {% unless visited contains lesson.slug %}
+                            {% if ld == id %}
+                                {% assign visited = visited | push: lesson.slug %}
+                                <tr>
+                                    <td>
+                                        <span class="courseslug" style="background: {{ color }};">
+                                            {% include indicator slug=lesson.id %}
+                                        </span> 
+                                    </td>
+                                    <td> 
+                                        <a href="{{ lesson.url | prepend: site.baseurl }}">
+                                            {% if lesson.indicator != "admin" %}
+                                                Lesson {{ lesson_counter }} - 
+                                            {% endif %}{{ lesson.title }}
+                                        </a>
+                                    </td>
+                                </tr>
+                                {% assign lesson_counter = lesson_counter | plus: 1 %}
+                            {% endif %}
+                        {% endunless %}
+                    {% endfor %}
+                {% endfor %}
+            {% endif %} {% comment %} is_course {% endcomment %}
+        {% endif %}
+    {% endfor %}
+    </table>
+    
