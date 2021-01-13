@@ -1,0 +1,65 @@
+{% comment %}
+You shouldn't have to edit this page very often. But if you want to modify some of the meta-data for the
+site, this is the place to do it.
+{% endcomment %}
+
+<head>
+  <!-- Basic Page Needs
+    ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Mobile Specific Metas
+    ================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title and meta description
+    ================================================== -->
+  <title>{{ site.title }} - {{ page.title }}</title>
+  <meta property="og:title" content="{{site.title}}">
+  <meta name="description" content="{{site.description}}">
+  <meta property="og:description" content="{{site.description}}">
+
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <!-- Favicons
+    ================================================== -->
+  <!-- 128x128 
+  <link rel="shortcut icon" type="image/ico" href="FIXME">
+  <link rel="icon" type="image/png" href="FIXME">
+  <link rel="icon" type="image/png" sizes="192x192" href="FIXME">
+  -->
+
+  <!-- SCRIPTS ================================================== -->
+  <script src="{{ '/assets/js/luxon.min.js' | prepend: site.baseurl }}"></script>  
+
+  <!-- CSS ================================================== -->
+  <link rel="stylesheet" href="{{ '/assets/uswds-' | append: site.uswds_version | append: '/css/uswds.min.css' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/assets/css/rubric.css' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/assets/css/dragbox.css' | prepend: site.baseurl }}">
+
+</head>
+
+
+<script>
+  function countdownTimer(durationInMinutes, id) {
+     var duration = durationInMinutes * 60;
+     var timer = duration, minutes, seconds;
+     var thisTimer = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        document.getElementById(id).innerHTML = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+           var audio = new Audio("{{ '/assets/audio/bing-bong.mp3' | prepend: site.baseurl }}");
+           document.getElementById(id).innerHTML = "STOP";
+           audio.play();
+           clearInterval(thisTimer);
+        }
+     }, 1000);
+  }
+</script>
